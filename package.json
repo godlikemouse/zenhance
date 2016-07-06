@@ -1,0 +1,17 @@
+{
+  "name": "zenhance",
+  "version": "0.0.1",
+  "description": "A Zend Framework like MVC approach to building NodeJS enterprise applications.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mvc",
+    "nodejs",
+    "zenhance",
+    "enterprise"
+  ],
+  "author": "Jason Graves <godlikemouse@godlikemouse.com> (=)",
+  "license": "MIT"
+}

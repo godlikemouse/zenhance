@@ -12,9 +12,7 @@ A Zend Framework MVC like approach to building enterprise NodeJS applications.
 
 Create a server.js file with the following contents and Zenhance will do the rest.
 
-	var zenhance = require("zenhance");
-
-	zenhance.run();
+	require("zenhance").run();
 
 Upon first run Zenhance will examine the current folder structure and add all required missing directories and files.  The final product of which should look like this.
 

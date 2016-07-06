@@ -2,7 +2,7 @@ Zenhance
 ========
 
 
-A Zend Framework like approach to building enterprise NodeJS applications.
+A Zend Framework MVC like approach to building enterprise NodeJS applications.
 
 ## Installation
 
@@ -40,14 +40,67 @@ The following file is located at /application/controllers/IndexController.js and
 	class IndexController {
 
 		indexAction(){
-			this.view.title = "Hello World!";
+			this.view.title = 'Welcome to Zenhance';
+			this.view.description = 'Looks like everything is working as expected.';
 		}
 
 	}
 
+Elements assigned to this.view are automatically handed to the template engine.
+
 ### Index View Example
 
+	<html>
+		<head>
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap-theme.min.css">
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+			<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		</head>
+		<body>
+			<div class="container">
+				<div class="jumbotron">
+					<h1>
+						{{title}}
+					</h1>
+					<p>
+						{{description}}
+					</p>
+				</div>
+			</div>
+		</body>
+	</html>
 
+The view simply renders out the title and description fields.  For more information on Handlebars templates see the Handlebars documentation or for Zenhance specfic Handlebars enhancements, see the Zenhance template enhancements documentation.
+
+## Handlebars Template Enhancements
+
+The following are enhancements added to the Handlebars template engine.
+
+### Partial
+
+To allow for Zend Framework like partials to be used, a new helper method has been introduced into the Handlebars template engine.
+
+	{{partial 'global/header'}}
+
+The above example will look for a header.handlebars template under the /application/views/scripts/partials/global directory.  If the argument to partial was passed as 'header' only, then the partial helper would look for the template at the /application/views/scripts/partials directory.
+
+To pass information to the partial, use either existing objects introduced into the template or pass key=argument sets as specified in the Handlebars documentation under partials.
+
+	{{partial 'global/header' headerData}}
+
+This example expects that the controller has specified an object called headerData (this.view.headerData = {...}) in the controller.
+
+	{{partial 'global/header' bright=true wide=false}}
+
+This example passes two variables bright and wide which would then become accessible in the partial as {{bright}} and {{wide}}.
+
+### Disabling The View Renderer
+
+To disable the view renderer for a specific controller or for a specific action, specify the following.
+
+	this.disableRenderer = true
+
+By default this value is false however, when true the templating engine is bypassed.  This requires that the controller access this.response to send the appropriate output directly.
 
 ## Configuration
 

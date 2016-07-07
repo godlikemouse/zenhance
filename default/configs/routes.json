@@ -1,0 +1,7 @@
+/*
+    for information on how to define custom routes, please see the documentation
+    https://github.com/godlikemouse/zenhance/wiki/Controller-Documentation#custom-routing
+*/
+{
+    "routes" : []
+}

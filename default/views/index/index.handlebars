@@ -3,6 +3,30 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap-theme.min.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<style>
+			.directory-tree {
+				background: #000;
+				padding: 1em;
+				border-radius: 5px 5px 5px 5px;
+			}
+
+			.directory-tree code {
+				color: #E7F2E7;
+				margin-right: 5px;
+				font-style: normal;
+				background: black;
+			}
+
+			.list-unstyled > li {
+				margin-left: 2em;
+				font-style: italic;
+				color: #888;
+			}
+
+			code.directory {
+				color: #2CEFEC;
+			}
+		</style>
 	</head>
 	<body>
 		<div class="container">
@@ -11,17 +35,68 @@
 					{{title}}
 				</h1>
 			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<p>
+						Your current project looks like this:
+					</p>
+					<ul class="directory-tree list-unstyled">
+						<li>
+							<code class="directory">/application</code>
+							<ul class="list-unstyled">
+								<li>
+									<code class="directory">/configs</code>
+									<ul class="list-unstyled">
+										<li><code>application.json</code> This is the application configuration file.</li>
+										<li><code>routes.json</code> This is the url routing file.</li>
+									</ul>
+								</li>
+								<li>
+									<code class="directory">/controllers</code>
+									<ul class="list-unstyled">
+										<li><code>IndexController.js</code> This is the controller serving you this page.</li>
+										<li><code>ErrorController.js</code> This is a generic error controller.</li>
+									</ul>
+								</li>
+								<li><code class="directory">/library</code></li>
+								<li><code class="directory">/models</code></li>
+								<li>
+									<code class="directory">/views</code>
+									<ul class="list-unstyled">
+										<li>
+											<code class="directory">index</code>
+											<ul class="list-unstyled">
+												<li><code>index.handlebars</code> This is the view file your seeing now.</li>
+											</ul>
+										</li>
+									</ul>
+									<ul class="list-unstyled">
+										<li>
+											<code class="directory">error</code>
+											<ul class="list-unstyled">
+												<li><code>index.handlebars</code> This is the view file for generic errors.</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+
+					</ul>
+				</div>
+			</div>
 			<h2>
 				Documentation
 			</h2>
 			<div class="row">
 				<div class="col-md-12">
 					<ul>
-						<li><a target="_new" href="https://github.com/godlikemouse/zenhance/wiki/Zenhance-Documentation">Zenhance Documentation</a></li>
 						<li><a target="_new" href="https://github.com/godlikemouse/zenhance/wiki/Controller-Documentation">Controller Documentation</a></li>
-						<li><a target="_new" href="https://github.com/godlikemouse/zenhance/wiki/View-Documentation">View Documentation</a></li>
+						<li><a target="_new" href="https://github.com/godlikemouse/zenhance/wiki/Library-Documentation">Library Documentation</a></li>
 						<li><a target="_new" href="https://github.com/godlikemouse/zenhance/wiki/Model-Documentation">Model Documentation</a></li>
+						<li><a target="_new" href="https://github.com/godlikemouse/zenhance/wiki/View-Documentation">View Documentation</a></li>
 						<li><a target="_new" href="https://github.com/godlikemouse/zenhance/wiki/Zenhance-API-Documentation">Zenhance API Documentation</a></li>
+						<li><a target="_new" href="https://github.com/godlikemouse/zenhance/wiki/Zenhance-Documentation">Zenhance Documentation</a></li>
 					</ul>
 				</div>
 			</div>

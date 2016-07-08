@@ -35,7 +35,7 @@ Upon first run Zenhance will examine the current folder structure and add all re
     /library
 	/public
 
-By default Zenhance ships with [Handlebars](http://handlebarsjs.com/) and is built on top of [Express](http://expressjs.com/).  The templating engine can be changed to use any ExpressJS compatible template engine you desire.
+By default Zenhance ships with [Handlebars](http://handlebarsjs.com/) and is built on top of [Express](http://expressjs.com/).  The templating engine can be changed to use any [Express](http://expressjs.com/) compatible template engine you desire.
 
 A default controller and view will be provided.
 

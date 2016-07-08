@@ -24,6 +24,8 @@ Upon first run Zenhance will examine the current folder structure and add all re
 		/controllers
 			IndexController.js
 			ErrorController.js
+		/layouts
+			/scripts
 		/models
 		/views
 			/scripts
@@ -82,8 +84,6 @@ The view simply renders out the title and description fields.  For more informat
 
 ## Upcoming Features
 
-- Full layout view support
-- Verb routing support
 - Prompting for new application creation
 
 ## Zenhance Documentation

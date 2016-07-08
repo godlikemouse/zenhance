@@ -17,12 +17,22 @@ Create a server.js file with the following contents and Zenhance will do the res
 Upon first run Zenhance will examine the current folder structure and add all required missing directories and files.  The final product of which should look like this.
 
 	/application
+		Bootstrap.js
 		/configs
+			application.json
+			routes.json
 		/controllers
+			IndexController.js
+			ErrorController.js
 		/models
 		/views
 			/scripts
+				/index
+					index.handlebars
+				/error
+					index.handlebars
 				/partials
+    /library
 	/public
 
 By default Zenhance ships with [Handlebars](http://handlebarsjs.com/) and is built on top of [Express](http://expressjs.com/).  The templating engine can be changed to use any ExpressJS compatible template engine you desire.
@@ -69,6 +79,12 @@ Elements assigned to this.view are automatically handed to the template engine.
 	</html>
 
 The view simply renders out the title and description fields.  For more information on Handlebars templates see the Handlebars documentation or for Zenhance specfic Handlebars enhancements, see the Zenhance template enhancements documentation.
+
+## Upcoming Features
+
+- Full layout view support
+- Verb routing support
+- Prompting for new application creation
 
 ## Zenhance Documentation
 

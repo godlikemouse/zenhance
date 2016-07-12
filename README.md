@@ -82,10 +82,6 @@ Elements assigned to this.view are automatically handed to the template engine.
 
 The view simply renders out the title and description fields.  For more information on Handlebars templates see the Handlebars documentation or for Zenhance specfic Handlebars enhancements, see the Zenhance template enhancements documentation.
 
-## Upcoming Features
-
-- Prompting for new application creation
-
 ## Zenhance Documentation
 
 View the [Zenhance Documentation](https://github.com/godlikemouse/zenhance/wiki/Zenhance-Documentation).

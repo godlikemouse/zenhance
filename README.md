@@ -16,6 +16,10 @@ Create a server.js file with the following contents and Zenhance will do the res
 
 	require("zenhance").run();
 
+Now run the server
+
+    #> node server.js
+
 Upon first run Zenhance will examine the current folder structure and add all required missing directories and files.  The final product of which should look like this.
 
 	/application

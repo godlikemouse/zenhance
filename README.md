@@ -4,6 +4,8 @@ Zenhance
 
 A Zend Framework MVC like approach to building enterprise NodeJS applications.
 
+Zenhance does a lot of the heavy lifting for you such as auto routing to controllers and views, automatic caching and optimization as well as loading and unloading of modified files.  This leaves you the developer more time to focus on developing your application without the need to start and restart the node server.
+
 ## Installation
 
 	npm install zenhance
@@ -58,12 +60,15 @@ The following file is located at /application/controllers/IndexController.js and
 
 Elements assigned to this.view are automatically handed to the template engine.
 
+The following file is located at /application/views/scripts/index/index.handlebars.
+
 ### Index View Example
 
 	<html>
 		<head>
-			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap-theme.min.css">
 			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap-theme.min.css">
+			<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 			<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
 		</head>
 		<body>

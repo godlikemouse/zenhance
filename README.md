@@ -89,7 +89,7 @@ The following file is located at /application/views/scripts/index/index.handleba
 		</body>
 	</html>
 
-The view simply renders out the title and description fields.  For more information on [Handlebars](http://handlebarsjs.com/) templates see the [Handlebars](http://handlebarsjs.com/) documentation or for Zenhance specfic Handlebars enhancements, see the Zenhance template enhancements documentation.
+The view simply renders out the title and description fields.  For more information on [Handlebars](http://handlebarsjs.com/) templates see the [Handlebars](http://handlebarsjs.com/) documentation or for Zenhance specfic Handlebars enhancements, see the [Zenhance partials](https://github.com/godlikemouse/zenhance/wiki/View-Documentation#partials) documentation.
 
 ## Zenhance Documentation
 

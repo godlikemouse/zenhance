@@ -4,7 +4,7 @@ Zenhance
 
 A Zend Framework MVC like approach to building enterprise NodeJS applications.
 
-Zenhance does a lot of the heavy lifting for you such as auto routing to controllers and views, automatic caching and optimization as well as loading and unloading of modified files.  This leaves you the developer more time to focus on developing your application without the need to start and restart the node server.
+Zenhance does a lot of the heavy lifting for you such as auto routing to controllers and views, automatic caching and optimization as well as loading and unloading of modified files.  This leaves you the developer more time to focus on developing your application without the need to stop and restart the node server.
 
 ## Installation
 

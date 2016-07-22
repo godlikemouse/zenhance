@@ -1,6 +1,6 @@
 {
   "name": "zenhance",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "A Zend Framework like MVC approach to building NodeJS enterprise applications.",
   "main": "index.js",
   "scripts": {
